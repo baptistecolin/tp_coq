@@ -86,3 +86,10 @@ apply H.
 apply H0.
 apply H0.
 Qed.
+
+Theorem th10: ~~~A -> ~A.
+intro.
+intro.
+tauto.
+Qed.
+
