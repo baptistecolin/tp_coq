@@ -93,3 +93,20 @@ intro.
 tauto.
 Qed.
 
+Theorem th11: (A/\(B\/C))->((A/\B)\/(A/\C)).
+intros.
+elim H.
+intros.
+elim H1.
+intros.
+left.
+split.
+apply H0.
+apply H2.
+intro.
+right.
+split.
+apply H0.
+apply H2.
+Qed.
+
