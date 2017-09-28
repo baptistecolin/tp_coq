@@ -80,3 +80,9 @@ tauto.
 Qed.
 
 Theorem th9: (A->B)->(A/\C)->(B/\C).
+intros.
+split.
+apply H.
+apply H0.
+apply H0.
+Qed.
