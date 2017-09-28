@@ -110,3 +110,8 @@ apply H0.
 apply H2.
 Qed.
 
+Theorem th13: (~A/\~B)->(A\/B)->False.
+intro.
+intro.
+tauto.
+Qed.
