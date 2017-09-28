@@ -115,3 +115,12 @@ intro.
 intro.
 tauto.
 Qed.
+
+Variable R: (nat*nat) -> Prop.
+
+Theorem th14: (forall x: nat, forall y: nat, (R (x, y))) -> (forall x: nat, forall y: nat, (R (x, y))).
+intro.
+intro.
+apply (H x).
+Qed.
+
